@@ -171,10 +171,6 @@ function createTestButton() {
             alert("❌ Unable to determine store ID.");
             return;
         }
-        if (!baseUrl || !storeId) {
-            alert("❌ Unable to determine store ID or base URL.");
-            return;
-        }
 
         const offersData = await fetchOffers(baseUrl, storeId);
         const companionOffers = offersData?.companionGalleryOffer;
