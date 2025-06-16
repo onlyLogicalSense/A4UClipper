@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Acme/Kings/jewelosco Auto Clipper",
+    "version": "1.0",
+    "description": "Automatically clips all unclipped Acme/Kings/Jewelosco coupons.",
+    "permissions": ["scripting", "tabs", "storage", "cookies"],
+    "host_permissions": ["https://www.acmemarkets.com/*", "https://www.kingsfoodmarkets.com/*", "https://www.jewelosco.com/*"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [{
+            "matches": ["https://www.acmemarkets.com/foru/coupons-deals.html*",
+                "https://www.kingsfoodmarkets.com/foru/coupons-deals.html*",
+                "https://www.jewelosco.com/foru/coupons-deals.html*"],
+
+            "js": ["content.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "action": {
+        "default_title": "A4U Clipper"
+    },
+    "web_accessible_resources": [{
+            "resources": ["inject.js"],
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
