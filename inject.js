@@ -8,6 +8,12 @@ function getBaseUrlAndStoreId(hostname) {
         return ["https://www.kingsfoodmarkets.com", storeId];
 	if (hostname.includes("jewelosco"))
         return ["https://www.jewelosco.com", storeId];
+	if (hostname.includes("safeway"))
+        return ["https://www.safeway.com", storeId];
+	if (hostname.includes("vons"))
+        return ["https://www.vons.com", storeId];
+	if (hostname.includes("tomthumb"))
+        return ["https://www.tomthumb.com", storeId];
     return [null, null];
 }
 
