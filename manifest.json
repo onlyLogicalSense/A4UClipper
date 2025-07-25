@@ -18,6 +18,7 @@
     "content_scripts": [{
             "matches": [
                 "https://www.acmemarkets.com/foru/coupons-deals.html*",
+		"https://www.acmemarkets.com/loyalty/coupons-deals*",
                 "https://www.kingsfoodmarkets.com/foru/coupons-deals.html*",
 		"https://www.kingsfoodmarkets.com/loyalty/coupons-deals*",
                 "https://www.jewelosco.com/foru/coupons-deals.html*",
