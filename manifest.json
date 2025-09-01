@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Acme/Kings/Jewel-Osco/Safeway/Vons/TomThumb Auto Clipper",
+    "name": "Acme/Kings/Jewel-Osco/Safeway/Vons/TomThumb/Albertsons Auto Clipper",
     "version": "1.0",
     "description": "Automatically clips all unclipped Acme/Kings/Jewelosco/Safeway/Vons/TomThumb coupons.",
     "permissions": ["scripting", "tabs", "storage", "cookies"],
@@ -10,7 +10,8 @@
 			"https://www.jewelosco.com/*", 
 			"https://www.safeway.com/*",
 			"https://www.vons.com/*", 
-			"https://www.tomthumb.com/*"
+			"https://www.tomthumb.com/*",
+			"https://www.albertsons.com/*"
 		],
     "background": {
         "service_worker": "background.js"
@@ -18,13 +19,14 @@
     "content_scripts": [{
             "matches": [
                 "https://www.acmemarkets.com/foru/coupons-deals.html*",
-		"https://www.acmemarkets.com/loyalty/coupons-deals*",
+				"https://www.acmemarkets.com/loyalty/coupons-deals*",
                 "https://www.kingsfoodmarkets.com/foru/coupons-deals.html*",
-		"https://www.kingsfoodmarkets.com/loyalty/coupons-deals*",
+				"https://www.kingsfoodmarkets.com/loyalty/coupons-deals*",
                 "https://www.jewelosco.com/foru/coupons-deals.html*",
                 "https://www.safeway.com/foru/coupons-deals.html*",
                 "https://www.vons.com/foru/coupons-deals.html*",
-                "https://www.tomthumb.com/foru/coupons-deals.html*"
+                "https://www.tomthumb.com/foru/coupons-deals.html*",
+				"https://www.albertsons.com/foru/coupons-deals.html*"
             ],
 
             "js": ["content.js"],
@@ -40,3 +42,4 @@
         }
     ]
 }
+
