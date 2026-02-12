@@ -16,6 +16,8 @@ function getBaseUrlAndStoreId(hostname) {
         return ["https://www.tomthumb.com", storeId];
 	if (hostname.includes("albertsons"))
         return ["https://www.albertsons.com", storeId];
+	if (hostname.includes("shaws"))
+        return ["https://www.shaws.com", storeId];
     return [null, null];
 }
 
@@ -211,4 +213,5 @@ function createTestButton() {
 }
 
 createTestButton();
+
 
