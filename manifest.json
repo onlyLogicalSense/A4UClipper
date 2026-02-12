@@ -6,12 +6,13 @@
     "permissions": ["scripting", "tabs", "storage", "cookies"],
     "host_permissions": [
 			"https://www.acmemarkets.com/*", 
-			"https://www.kingsfoodmarkets.com/*", 
-			"https://www.jewelosco.com/*", 
+			"https://www.albertsons.com/*",
+			"https://www.jewelosco.com/*",
+			"https://www.kingsfoodmarkets.com/*",
 			"https://www.safeway.com/*",
-			"https://www.vons.com/*", 
+			"https://www.shaws.com/*",
 			"https://www.tomthumb.com/*",
-			"https://www.albertsons.com/*"
+			"https://www.vons.com/*"
 		],
     "background": {
         "service_worker": "background.js"
@@ -20,13 +21,14 @@
             "matches": [
                 "https://www.acmemarkets.com/foru/coupons-deals.html*",
 				"https://www.acmemarkets.com/loyalty/coupons-deals*",
+				"https://www.albertsons.com/foru/coupons-deals.html*",
+				"https://www.jewelosco.com/foru/coupons-deals.html*",
                 "https://www.kingsfoodmarkets.com/foru/coupons-deals.html*",
 				"https://www.kingsfoodmarkets.com/loyalty/coupons-deals*",
-                "https://www.jewelosco.com/foru/coupons-deals.html*",
                 "https://www.safeway.com/foru/coupons-deals.html*",
-                "https://www.vons.com/foru/coupons-deals.html*",
-                "https://www.tomthumb.com/foru/coupons-deals.html*",
-				"https://www.albertsons.com/foru/coupons-deals.html*"
+				"https://www.shaws.com/loyalty/coupons-deals.html*"
+				"https://www.tomthumb.com/foru/coupons-deals.html*",
+                "https://www.vons.com/foru/coupons-deals.html*"
             ],
 
             "js": ["content.js"],
@@ -42,4 +44,5 @@
         }
     ]
 }
+
 
