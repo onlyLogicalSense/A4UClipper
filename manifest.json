@@ -23,10 +23,10 @@
 				"https://www.albertsons.com/loyalty/coupons-deals*",
 				"https://www.jewelosco.com/loyalty/coupons-deals*",
 				"https://www.kingsfoodmarkets.com/loyalty/coupons-deals*",
-                "https://www.safeway.com/foru/coupons-deals*",
+                "https://www.safeway.com/loyalty/coupons-deals*",
 				"https://www.shaws.com/loyalty/coupons-deals*",
-				"https://www.tomthumb.com/foru/coupons-deals*",
-                "https://www.vons.com/foru/coupons-deals*"
+				"https://www.tomthumb.com/loyalty/coupons-deals*",
+                "https://www.vons.com/loyalty/coupons-deals*"
             ],
 
             "js": ["content.js"],
@@ -42,6 +42,7 @@
         }
     ]
 }
+
 
 
 
